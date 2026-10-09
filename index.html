@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#09090d" />
+  <meta name="description" content="ROEUY MC — Minecraft gaming creator and digital store." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="ROEUY MC | Gaming & Digital Store" />
+  <meta property="og:description" content="Gaming • Minecraft • Digital Store" />
+  <meta property="og:image" content="assets/profile.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>ROEUY MC | Gaming & Digital Store</title>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div id="particles" aria-hidden="true"></div>
+
+  <main class="page-shell" id="main-content">
+    <section class="taplink-card" aria-label="ROEUY MC profile and links">
+      <header class="topbar">
+        <a class="brand-mark" href="#main-content" aria-label="ROEUY MC home">
+          <span class="brand-dot"></span><span>ROEUY<span class="lime">MC</span></span>
+        </a>
+        <div class="topbar-actions">
+          <button class="icon-button" type="button" id="language-toggle" aria-label="Switch to Khmer" title="Switch language">
+            <span aria-hidden="true">ខ្មែរ</span>
+          </button>
+          <button class="icon-button" type="button" id="theme-toggle" aria-label="Switch color theme" title="Switch color theme">
+            <i data-lucide="sun" aria-hidden="true"></i>
+          </button>
+        </div>
+      </header>
+
+      <section class="profile" aria-labelledby="profile-name">
+        <div class="avatar-wrap">
+          <div class="avatar-orbit orbit-a" aria-hidden="true"></div>
+          <div class="avatar-orbit orbit-b" aria-hidden="true"></div>
+          <img id="profile-image" class="avatar" src="assets/profile.png" alt="ROEUY MC gaming avatar" width="124" height="124" />
+          <span class="online-indicator" role="status"><span class="sr-only">Online</span></span>
+        </div>
+
+        <div class="profile-title-row">
+          <h1 id="profile-name">ROEUY MC</h1>
+          <span class="creator-badge" title="Creator profile badge" aria-label="Creator profile badge">
+            <i data-lucide="badge-check" aria-hidden="true"></i>
+          </span>
+        </div>
+        <p id="profile-handle" class="handle">@roeuymc.1</p>
+        <p id="profile-bio" class="bio">Gaming <span aria-hidden="true">🎮</span> <b>•</b> Minecraft <span aria-hidden="true">⛏️</span> <b>•</b> Digital Store</p>
+        <p id="profile-bio-km" class="bio-km" lang="km">អ្នកលេងហ្គេម • Minecraft • ហាងឌីជីថល</p>
+
+        <div class="profile-meta">
+          <span class="online-copy"><span class="pulse-dot" aria-hidden="true"></span><span id="online-label">Online now</span></span>
+          <span class="meta-divider" aria-hidden="true"></span>
+          <span id="follower-label">Gaming creator</span>
+        </div>
+      </section>
+
+      <section class="quick-actions" aria-label="Profile actions">
+        <button type="button" class="utility-button" id="copy-button">
+          <i data-lucide="copy" aria-hidden="true"></i><span id="copy-label">Copy profile link</span>
+        </button>
+        <button type="button" class="utility-button" id="share-button">
+          <i data-lucide="share-2" aria-hidden="true"></i><span id="share-label">Share</span>
+        </button>
+      </section>
+
+      <nav id="link-list" class="link-list" aria-label="ROEUY MC links"></nav>
+
+      <footer class="site-footer">
+        <div id="social-list" class="social-list" aria-label="ROEUY MC social profiles"></div>
+        <p><span id="footer-name">ROEUY MC</span> <span aria-hidden="true">✦</span> <span id="footer-year"></span></p>
+        <p class="footer-note" id="footer-note">Built for the next level.</p>
+      </footer>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Lucide provides the line icons; configuration and all editable content live in script.js -->
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
